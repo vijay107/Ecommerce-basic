@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+nav{
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    z-index: 9;
+    width: 99%;
+    height: 120px;
+    background-color:antiquewhite;
+    box-shadow: 0px 5px 5px gray;
+}
+.nav .nav_top{
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+}
+.logo{
+    float: left;
+    width: 15%;
+}
+.logo img{
+    margin-left: 20px;
+    padding: 10px;
+}
+.nav_top h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 65px;
+    float: left;
+    margin-top: 20px;
+    text-align: left;
+}
+.nav_side{
+    margin-left: 180px;
+    margin-top: 50px;
+    float: right;
+    width: 45%;
+}
+.nav_side a{
+    margin: 10px;
+    color: purple;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 5px;
+    font-weight: lighter;
+}
+.nav_side a:hover{
+    background-color: white;
+    border-bottom: 2px solid purple;
+    color: purple;
+    text-decoration: none;
+}
+.about .about_content{
+    text-align: center  ;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 140px;
+}
+.about_content h2{
+    padding-top: 10px;
+    font-size: 40px;
+}
+.about_content p{
+    line-height: 30px;
+}
+
+.reviews{   
+    background: linear-gradient(to bottom right, orange, yellow);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviews h2{
+    font-size: 40px;
+    padding-top: 25px;
+    color: blue;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.container-m {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    padding: 20px
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    height: 250px;
+    margin-top: 10px
+}
+
+.u-color {
+    color: blue
+}
+
+.user-image img {
+    border: 3px solid #00f;
+    padding: 2px
+}
+.ad{
+    margin-left: 100px;
+    float: left;
+}
+.ad iframe{
+    border: 5px dotted orange;
+}
+.ad .desc{
+    width: 55%;
+    float: right;
+}
+.feed{
+    margin-left: 20px;
+    margin-top: 120vh;
+    margin-right: 20px;
+    background-image: url(/images/bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    float: none;
+    padding: 30px;
+    text-align: center;
+    box-sizing:border-box;
+    height: 500px;
+}
+.feed h2{
+    color: black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: cursive;
+}
+.feed .feed_form input{
+    border-radius: 2px;
+    border: 1px solid  black;
+    background-color:transparent;
+    outline: none;
+    width: 25%;
+}
+.feed .feed_form textarea{
+    border-radius: 2px;
+    border: 1px solid  black;
+    background-color:transparent;
+    outline: none;
+}
+.feed .feed_form textarea:hover{
+    border-bottom: 3px solid black;
+}
+
+.feed .feed_form input:hover{
+    border-bottom: 3px solid black;
+}
+.feed .feed_form input[type=submit]{
+    margin-top: 20px;
+    width: 100px;
+}
+.feed .feed_form input[type=reset]{
+    width: 100px;
+}
+footer{
+    margin-top: 60px;
+    float: left;
+    text-align: center;
+}
+footer h1{
+    font-family: 'Kaushan Script', cursive;
+}
+footer h2{
+    padding: 3px;
+}
+footer .logo{
+    margin-left: 580px;
+}
+footer .footer-content{
+    margin-top: 210px;
+    margin-left: 470px;
+}
+footer a{
+    color: blue;
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer a:hover{
+    color: purple;
+    text-decoration: none;
+}
+footer p{
+    margin-top: 20px;
+    margin-left: 500px;
+}
+.social a{
+    font-size: 30px;
+}
+.contact a{
+    font-size: 25px;
+}

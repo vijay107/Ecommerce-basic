@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <img src="images/shopping-cart.png" alt="E-cart" width="100px">
+        </div>
+        <h1>Flipkart.com</h1>
+        <div class="nav_side">
+            <a href="about.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign up</a>
+        </div>
+    </nav>
+
+    <div class="head">
+        <h2>Contact us</h2>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.5531527099406!2d73.87542071437367!3d18.862526263550624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd352e2f25bdf1%3A0x7c9d8b2082fff38f!2sSangam%20Garden!5e0!3m2!1sen!2sin!4v1618593712790!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+    </div>
+    <div class="info">
+        <a href="">Address - Pune, Maharashtra, India.</a><br>
+        <a href="tel: +917447823546">Contact No. +91 7447823546</a><br>
+        <a href="mailto: vijayparadhi17@gmail.com" target="_blank">Email - vijayparadhi17@gmail.com</a>
+
+    <footer>
+        <div class="logo">
+            <img src="images/shopping-cart.png" alt="E-cart" width="150px">
+            <h1>Flipkart.com</h1>
+        </div>
+        <div class="footer-content">
+            <div class="pages">
+                <h2>Pages</h2>
+                <a href="about.html">About us</a>|
+                <a href="services.html">Services</a>|
+                <a href="contact.html">Contact</a>|
+                <a href="login.html">Login</a>|
+                <a href="signup.html">Sign up</a>
+            </div>
+            <div class="doc">
+                <h2>Documents</h2>
+                <a href="">Privacy policy</a>|
+                <a href="">terms and Conditions</a>|
+                <a href="">Refund policy</a>
+            </div>
+            <div class="social">
+                <h2>Follow us</h2>
+                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h2>Contact us</h2>
+                <a href="mailto: vijayparadhi17@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="tel: +919325846870"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                <a href="https://api.WhatsApp.com/send?phone= +917447823546" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="conatact.html"></a>
+            </div>
+        </div>
+
+        <p>Copyright &copy; 2021, All rights reserved.</p>
+    </footer>
+</body>
+    <script type="text/javascript">
+    function validation()
+    {
+        var name=document.getElementById('usname').value;
+        var email=document.getElementById('usemail').value;
+        var number=document.getElementById('usnumber').value;
+
+        var namecheck = /^[a-z][a-z\s]{3,50}*$/;
+        var emailcheck = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+        var numbercheck = /^[6789]{1}[0-9]{9}$/;
+
+        if(!namecheck.test(name))
+        {
+            document.getElementById("ername").innerHTML="Invalid name";
+            document.review_sheet.name.focus() ;
+            return false;
+        }
+
+        if(!emailcheck.test(email))
+        {
+            
+            document.getElementById("eremail").innerHTML="Invalid email";
+            document.review_sheet.email.focus() ;
+            return false;
+        }
+
+        if(!numbercheck.test(number))
+        {
+            document.getElementById("ernumber").innerHTML="Invalid number";
+            document.review_sheet.number.focus() ;
+            return false;
+        }
+        return true;
+        document.review_sheet.submit();
+    } 
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwY6iIzJgH2eZ1Fa-PJ-EEMbp3d4yCLHVpDT9dXe5k9RrleZWuVGI2X5x0jkzuIzQCm/exec '
+        const form = document.forms['review_sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for review.."))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>  
+</html>
